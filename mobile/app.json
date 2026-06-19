@@ -1,0 +1,37 @@
+{
+  "expo": {
+    "name": "Speakly AI",
+    "slug": "speakly-ai",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "light",
+    "scheme": "speakly",
+    "newArchEnabled": true,
+    "splash": {
+      "resizeMode": "contain",
+      "backgroundColor": "#6C5CE7"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.speakly.ai",
+      "infoPlist": {
+        "NSMicrophoneUsageDescription": "Speakly AI uses your microphone so you can practice speaking English."
+      }
+    },
+    "android": {
+      "package": "com.speakly.ai",
+      "permissions": ["RECORD_AUDIO"]
+    },
+    "plugins": [
+      [
+        "expo-av",
+        {
+          "microphonePermission": "Speakly AI uses your microphone so you can practice speaking English."
+        }
+      ]
+    ],
+    "extra": {
+      "apiUrl": "http://localhost:8000"
+    }
+  }
+}
